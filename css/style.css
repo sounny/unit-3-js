@@ -1,4 +1,7 @@
 /*Add CSS styles here*/
+.gratBackground {
+    fill: #5186f1;
+}
 
 .axis path,
 .axis line {
@@ -19,20 +22,18 @@
     font-weight: bold;
 }
 
-.countries {
-    fill: #FFF;
+.states {
+    fill: #dddada;
     stroke: #010101;
     stroke-width: 2px;
 }
+
+
 
 .gratLines {
     fill: none;
     stroke: #999;
     stroke-width: 1px;
-}
-
-.gratBackground {
-    fill: #5186f1;
 }
 
 .map {
