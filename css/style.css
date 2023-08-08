@@ -1,41 +1,77 @@
-/*Add CSS styles here*/
+
+.axis line {
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.title {
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.gratLines {
+	fill: none;
+	stroke: #000;
+	stroke-width: 1px;
+}
+
 .gratBackground {
-    fill: #5186f1;
+	fill: #D5E3FF;
+}
+
+.map {
+    border: medium solid #999;
+    margin: 10px 0 0 20px;
+}
+
+.chart {
+    background-color: rgba(128,128,128,.2);
+    border: medium solid #999;
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+.state {
+    stroke: #000;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+}
+
+.numbers {
+    fill: white;
+    font-family: sans-serif;
+}
+
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.chartBackground {
+    fill: rgba(128,128,128,.2);
+}
+
+.chartFrame {
+    fill: none;
+    stroke: #999;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
 }
 
 .axis path,
 .axis line {
     fill: none;
-    stroke: black;
+    stroke: #999;
     stroke-width: 1px;
     shape-rendering: crispEdges;
 }
 
 .axis text {
     font-family: sans-serif;
-    font-size: 0.9em;
-}
-
-.title {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.states {
-    fill: #dddada;
-    stroke: #010101;
-    stroke-width: 2px;
-}
-
-
-
-.gratLines {
-    fill: none;
-    stroke: #999;
-    stroke-width: 1px;
-}
-
-.map {
-    border: medium solid #171616;
+    font-size: 0.8em;
+    fill: #999;
 }
