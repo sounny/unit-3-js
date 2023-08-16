@@ -1,37 +1,39 @@
+body, h2, h3, p {
+    font-family: Georgia;
+    background-color: #eef1f7
+}
 
 .axis line {
-	fill: none;
-	stroke: black;
-	stroke-width: 1px;
-	shape-rendering: crispEdges;
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
 }
 
 .title {
-	font-family: sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .gratLines {
-	fill: none;
-	stroke: #000;
-	stroke-width: 1px;
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
 }
 
 .gratBackground {
-	fill: #D5E3FF;
+    fill: #D5E3FF;
 }
 
 .map {
     border: medium solid #999;
-    margin: 10px 0 0 20px;
+    margin: 10px auto; /* Centered the map and gave equal margin on top and bottom */
 }
 
 .chart {
     background-color: rgba(128,128,128,.2);
     border: medium solid #999;
-    float: right;
-    margin: 10px 20px 0 0;
+    margin: 10px auto; 
 }
 
 .state {
@@ -42,18 +44,14 @@
 
 .numbers {
     fill: white;
-    font-family: sans-serif;
 }
 
 .chartTitle {
-    font-family: sans-serif;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.chartBackground {
-    fill: rgba(128,128,128,.2);
-}
+
 
 .chartFrame {
     fill: none;
@@ -62,8 +60,7 @@
     shape-rendering: crispEdges;
 }
 
-.axis path,
-.axis line {
+.axis path, .axis line {
     fill: none;
     stroke: #999;
     stroke-width: 1px;
@@ -71,7 +68,78 @@
 }
 
 .axis text {
-    font-family: sans-serif;
     font-size: 0.8em;
     fill: #999;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 15; 
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
+}
+
+option {
+    font-weight: normal;
+}
+
+.infolabel {
+    position: absolute;
+    height: 50px;
+    min-width: 100px;
+    color: #fff;
+    background-color: #0a007b;
+    border: solid thin #fff;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.title-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-dropdown-container, .chart-container {
+    flex: 1;
+    text-align: center; 
+    position: relative;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.instructions-container, .background-container, .sources-container {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content inside */
 }

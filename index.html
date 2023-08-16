@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-            <title></title>
 
-        <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css">
-        <!--[if IE<9]>
-            <link rel="stylesheet" href="css/style.ie.css">
-        <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-         <!--you can also place internal styles here;
-             place these within <style> tags-->
-        
-    </head>
+<body>
 
-    <body>
-          <!--put your initial page content here-->
+    <!-- Container for the title, map, dropdown, and chart -->
+    <div class="content-container">
+        <!-- Title for the map and chart -->
+        <div class="title-container">
+            <h2>United States Housing Statistics (2015)</h2>
+        </div>
 
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
-		<script src="lib/d3.js"></script>
-        <script src="lib/topojson.js"></script>
-        <!--put your external script links here-->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+        <!-- Container for map and dropdown -->
+        <div class="map-dropdown-container">
+            <!-- Dropdown -->
+            <div class="dropdown-container">
+                <!-- Dropdown code will be placed here -->
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <!-- Map SVG will be appended here -->
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-container">
+            <!-- Chart SVG will be appended here -->
+        </div>
+
+        <!-- Containers for instructions, background, and sources -->
+        <div class="info-container">
+            <div class="instructions-container">
+                <h3>Background</h3>
+                <p>This application visualizes geospatial data regarding 2015 housing statistics in the US. It displays a map of the US with states colored based on selected housing attributes.</p>
+            </div>
+
+            <div class="background-container">
+                <h3>Instructions</h3>
+                <p>Users can hover with their mouse over either the map or the bar chart for information by state. The displayed attribute can be changed using the dropdown menu.</p>
+            </div>
+
+            <div class="sources-container">
+                <h3>Sources</h3>
+                <p>United States Census Bureau: American Community Survey</p>
+                <p><a href="https://data.census.gov/table?t=Homeownership+Rate:Housing&g=010XX00US$0400000&tid=ACSDP5YAIAN2015.DP04&moe=false&tp=true" target="_blank">DP04| Selected Housing Characteristics</a></p>
+                <p><a href="https://data.census.gov/table?q=population&t=Housing&g=010XX00US$0400000&tid=ACSDP1Y2015.DP05&moe=false" target="_blank">DP05| ACS Demographic and Housing Estimates</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your script links -->
+    <script src="lib/d3.js"></script>
+    <script src="lib/topojson.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
